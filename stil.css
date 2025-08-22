@@ -1,0 +1,42 @@
+.menu{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background: #f3e4e4;
+    width: auto;display:inline-flex;
+}
+
+.menu li{
+   
+    background: #f3e4e4;
+    
+}
+
+.menu li a{
+    display: block;
+    padding: 10px 10px;
+    color: #000;
+    text-decoration: none;
+}
+
+.menu li a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.menu li a:hover {
+    background: #252424;
+    color:#fff;
+}
+
+/* Küçük ekranlar için */
+@media screen and (max-width: 600px) {
+  .menu {
+    flex-direction: column; /* öğeleri alt alta dizer */
+    align-items: flex-start; /* sol hizalama */
+  }
+
+  .menu li a {
+    padding: 5px; /* biraz daha küçük padding */
+  }
+}
